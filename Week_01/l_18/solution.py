@@ -1,0 +1,9 @@
+secondPerDay = int(input())
+hour = secondPerDay // (60 * 60)
+secondPerDay = secondPerDay - hour * 60 * 60
+hour = hour % 24
+minute = secondPerDay // 60
+strMinute = str(minute // 10) + str(minute % 10)
+second = secondPerDay % 60
+strSecond = str(second // 10) + str(second % 10)
+print(hour, strMinute, strSecond, sep=':')
